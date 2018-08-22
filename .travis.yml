@@ -1,5 +1,6 @@
 after_success: "firebase deploy -project traviscitest-6e3a9 -token $FIREBASE_TOKEN."
 install: " npm install -g firebase-tools"
+before_install: "npm i -g npm@version-number"
 language: node_js
 node_js: 
   - "7"
